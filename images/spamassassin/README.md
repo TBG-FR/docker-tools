@@ -10,7 +10,7 @@ To add local rules, create a rules file for
 /etc/mail/spamassassin/local.cf and map that file into the
 container. To ensure that updated rules survive container restart,
 make sure the /var/lib/spamassassin home directory is mounted to a
-named volume. See the docker-compose.yml file here for an example.
+named volume. See the [docker-compose.yml file](https://github.com/instantlinux/docker-tools/blob/main/images/spamassassin/docker-compose.yml) for an example.
 This repo has complete instructions for
 [building a kubernetes cluster](https://github.com/instantlinux/docker-tools/blob/main/k8s/README.md) where you can launch with [helm](https://github.com/instantlinux/docker-tools/tree/main/images/spamassassin/helm) or [kubernetes.yaml](https://github.com/instantlinux/docker-tools/blob/main/images/spamassassin/kubernetes.yaml) using _make_ and customizing [Makefile.vars](https://github.com/instantlinux/docker-tools/blob/main/k8s/Makefile.vars) after cloning this repo:
 ~~~
